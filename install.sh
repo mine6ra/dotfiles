@@ -2,13 +2,12 @@
 for name in .*; do
     if [ ! -d "$name" ]; then
         [ "$name" = ".DS_Store" ] && continue
-        echo $name
 
+        # 上書きはしない
         target="$HOME/$name"
-        echo $target
         if [ ! -e "$target" ]; then
-            echo "-----> Symlinking your new $target"
             ln -s "$PWD/$name" "$target"
+            echo "Created $name"
         fi
     fi
 done
