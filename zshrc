@@ -19,3 +19,7 @@ if [ $ITERM_SESSION_ID ]; then
     echo -ne "\033]0;$PWD\007"
   }
 fi
+
+# Google Cloud SDK
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
