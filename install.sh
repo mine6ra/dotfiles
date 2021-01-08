@@ -4,6 +4,7 @@ for name in *; do
     [ "$name" = "LICENSE" ] && continue
     [ "$name" = "README.md" ] && continue
     [ "$name" = ".DS_Store" ] && continue
+    [ "$name" = "com.googlecode.iterm2.plist" ] && continue
 
     # 上書きはしない
     target="$HOME/.$name"
