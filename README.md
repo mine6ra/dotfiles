@@ -18,6 +18,8 @@ sh install.sh
 brew bundle --global
 ```
 
+- iTerm2 > Preferences > General > Preferences > Load preferences from a custom folder or URL > Select「~dotfiles/」
+
 ## Update
 
 ### Homebrew Bundle
