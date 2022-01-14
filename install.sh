@@ -6,6 +6,12 @@ for name in *; do
     [ "$name" = ".DS_Store" ] && continue
     [ "$name" = "com.googlecode.iterm2.plist" ] && continue
 
+    if ["$REMOTE_CONTAINERS"]
+        [ "$name" = "config/karabiner"* ] && continue
+        [ "$name" = "Brewfile" ] && continue
+        [ "$name" = "gitignore_global" ] && continue
+    fi
+
     # 上書きはしない
     target="$HOME/.$name"
     if [ ! -e "$target" ]; then
