@@ -26,3 +26,5 @@ for name in *; do
         echo "Created $name"
     fi
 done
+
+source ~/.zshrc
