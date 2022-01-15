@@ -6,14 +6,14 @@ for name in *; do
     [ "$name" = ".DS_Store" ] && continue
     [ "$name" = "com.googlecode.iterm2.plist" ] && continue
 
-    if ["$REMOTE_CONTAINERS"]; then
+    if ["$REMOTE_CONTAINERS" = "true"]; then
         [ "$name" = "config/karabiner"* ] && continue
         [ "$name" = "Brewfile" ] && continue
         [ "$name" = "gitignore_global" ] && continue
     fi
 
     # 上書きはしない
-    target="$HOME/.$name"
+    target = "$HOME/.$name"
     if [ ! -e "$target" ]; then
         ln -s "$PWD/$name" "$target"
         echo "Created $name"
