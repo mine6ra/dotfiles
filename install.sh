@@ -21,5 +21,5 @@ for name in *; do
 done
 
 if "$REMOTE_CONTAINERS" = "true"; then
-    echo y | sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+    curl -s "https://starship.rs/install.sh" | sh -s -- -y
 fi
