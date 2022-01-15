@@ -2,10 +2,6 @@
 
 cd `dirname $0`
 
-if "$REMOTE_CONTAINERS" = "true"; then
-    curl -s "https://starship.rs/install.sh" | sh -s -- -y
-fi
-
 for name in *; do
     [ "$name" = "install.sh" ] && continue
     [ "$name" = "LICENSE" ] && continue
@@ -27,4 +23,6 @@ for name in *; do
     fi
 done
 
-source ~/.zshrc
+if "$REMOTE_CONTAINERS" = "true"; then
+    curl -s "https://starship.rs/install.sh" | sh -s -- -y
+fi
