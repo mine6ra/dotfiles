@@ -24,6 +24,6 @@ for name in *; do
 done
 
 # .zshrcにinitが記述されているため先にインストールする
-if "$REMOTE_CONTAINERS" = "true"; then
-    curl -s "https://starship.rs/install.sh" | sh -s -- -y
-fi
+# if "$REMOTE_CONTAINERS" = "true"; then
+#     curl -s "https://starship.rs/install.sh" | sh -s -- -y
+# fi
