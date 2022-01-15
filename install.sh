@@ -19,3 +19,7 @@ for name in *; do
         echo "Created $name"
     fi
 done
+
+if "$REMOTE_CONTAINERS" = "true"; then
+    sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+fi
