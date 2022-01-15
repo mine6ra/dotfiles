@@ -1,9 +1,6 @@
 #!/bin/zsh
 
-# .zshrcにinitが記述されているため先にインストールする
-if "$REMOTE_CONTAINERS" = "true"; then
-    curl -s "https://starship.rs/install.sh" | sh -s -- -y
-fi
+cd `dirname $0`
 
 for name in *; do
     [ "$name" = "install.sh" ] && continue
@@ -25,3 +22,8 @@ for name in *; do
         echo "Created $name"
     fi
 done
+
+# .zshrcにinitが記述されているため先にインストールする
+if "$REMOTE_CONTAINERS" = "true"; then
+    curl -s "https://starship.rs/install.sh" | sh -s -- -y
+fi
