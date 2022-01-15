@@ -16,14 +16,14 @@ for name in *; do
     fi
 
     # 上書きはしない
-    target = "$HOME/.$name"
+    target="$HOME/.$name"
     if [ ! -e "$target" ]; then
         ln -s "$PWD/$name" "$target"
         echo "Created $name"
     fi
 done
 
-# .zshrcにinitが記述されているため先にインストールする
-# if "$REMOTE_CONTAINERS" = "true"; then
-#     curl -s "https://starship.rs/install.sh" | sh -s -- -y
-# fi
+.zshrcにinitが記述されているため先にインストールする
+if "$REMOTE_CONTAINERS" = "true"; then
+    curl -s "https://starship.rs/install.sh" | sh -s -- -y
+fi
