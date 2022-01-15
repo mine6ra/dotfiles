@@ -6,7 +6,7 @@ for name in *; do
     [ "$name" = ".DS_Store" ] && continue
     [ "$name" = "com.googlecode.iterm2.plist" ] && continue
 
-    if ["$REMOTE_CONTAINERS" == "true"]; then
+    if "$REMOTE_CONTAINERS" = "true"; then
         [ "$name" = "config/karabiner"* ] && continue
         [ "$name" = "Brewfile" ] && continue
         [ "$name" = "gitignore_global" ] && continue
