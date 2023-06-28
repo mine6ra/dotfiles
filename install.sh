@@ -11,7 +11,6 @@ for name in *; do
 
     if "$REMOTE_CONTAINERS" = "true"; then
         [ "$name" = "config/karabiner"* ] && continue
-        [ "$name" = "Brewfile" ] && continue
         [ "$name" = "gitignore_global" ] && continue
     fi
 

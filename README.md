@@ -12,33 +12,15 @@ git clone --recursive https://github.com/mine6ra/dotfiles.git
 sh install.sh
 ```
 
-- Homebrew Bundle でアプリケーションをインストールする
+- Homebrew Bundle でアプリケーションをインストール/アップグレードする
 
 ```shell
-brew bundle --global
+brew bundle --file=Brewfile
 ```
 
 - iTerm2 > Preferences > General > Preferences > Load preferences from a custom folder or URL > Select「~dotfiles/」
 
-## Update
-
-### Homebrew Bundle
-
-#### アプリケーションをバージョンアップする
-
-```shell
-brew bundle --global
-```
-
-#### アプリケーションを追加する
-
-- Brewfile に追加する。
-
-```shell
-brew bundle --global
-```
-
-#### アプリケーションをアンインストールする
+## アプリケーションをアンインストールする
 
 - Brewfile から削除する。
 
@@ -46,7 +28,7 @@ brew bundle --global
 brew bundle cleanup --global
 ```
 
-### Git submodule
+## Git submodule
 
 ```shell
 cd zprezto
