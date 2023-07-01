@@ -15,7 +15,7 @@ sh install.sh
 - Homebrew Bundle でアプリケーションをインストール/アップグレードする
 
 ```shell
-brew bundle --file=Brewfile
+brew bundle --global
 ```
 
 - iTerm2 > Preferences > General > Preferences > Load preferences from a custom folder or URL > Select「~dotfiles/」
