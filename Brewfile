@@ -18,6 +18,7 @@ cask "appcleaner"
 cask "brave-browser"
 cask "deepl"
 cask "docker"
+cask "fig"
 # cask "font-fira-code-nerd-font"
 cask "font-sauce-code-pro-nerd-font"
 cask "google-chrome"
@@ -30,6 +31,5 @@ cask "skitch"
 cask "teamviewer"
 cask "visual-studio-code"
 
-mas "Kindle", id: 405399194
 mas "LINE", id: 539883307
 mas "Velja", id: 1607635845
