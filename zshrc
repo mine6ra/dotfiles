@@ -20,6 +20,10 @@ if [ $ITERM_SESSION_ID ]; then
   }
 fi
 
+# Node.js
+# export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
+
 # Google Cloud SDK
 # source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 # source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
