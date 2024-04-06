@@ -1,14 +1,13 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "oven-sh/bun"
 
 # brew "awscli"
 brew "bun"
 # brew "graphviz"
 brew "mas"
+brew "nodenv"
 # brew "pipenv"
 # brew "plantuml"
 # brew "pyenv"
@@ -30,10 +29,12 @@ cask "google-drive"
 # cask "iterm2"
 cask "karabiner-elements"
 cask "rectangle"
+cask "rider"
 cask "skitch"
 cask "tableplus"
 cask "teamviewer"
 cask "visual-studio-code"
+cask "zoom"
 
 mas "LINE", id: 539883307
 mas "Velja", id: 1607635845
