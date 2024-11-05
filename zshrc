@@ -10,9 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Starship
-eval "$(starship init zsh)"
-
 # ウィンドウタイトルにカレントディレクトリパスを表示する
 # if [ $ITERM_SESSION_ID ]; then
 #   precmd() {
@@ -33,3 +30,6 @@ if [[ -z "${ISTERM}" && $- = *i* && $- != *c* ]]; then
     is -s zsh ; exit
   fi
 fi
+
+# Starship(最後)
+eval "$(starship init zsh)"
