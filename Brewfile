@@ -1,17 +1,11 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "oven-sh/bun"
 
 # brew "awscli"
-brew "bun"
-# brew "graphviz"
-brew "mas"
+# brew "mas"
 brew "nodenv"
-# brew "pipenv"
-# brew "plantuml"
-# brew "pyenv"
-# brew "starship"
+brew "starship"
 
 cask "1password"
 cask "alfred"
@@ -32,6 +26,7 @@ cask "skitch"
 cask "tableplus"
 cask "teamviewer"
 cask "visual-studio-code"
+# cask "webstorm"
 cask "zoom"
 
 mas "LINE", id: 539883307

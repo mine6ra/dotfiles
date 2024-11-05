@@ -14,19 +14,22 @@ fi
 eval "$(starship init zsh)"
 
 # ウィンドウタイトルにカレントディレクトリパスを表示する
-if [ $ITERM_SESSION_ID ]; then
-  precmd() {
-    echo -ne "\033]0;$PWD\007"
-  }
-fi
+# if [ $ITERM_SESSION_ID ]; then
+#   precmd() {
+#     echo -ne "\033]0;$PWD\007"
+#   }
+# fi
 
 # Node.js
 # export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
 
-# Google Cloud SDK
-# source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-# source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-
-# Pipenv
-export PIPENV_VENV_IN_PROJECT=1
+# ---------------- inshellisense shell plugin ----------------
+if [[ -z "${ISTERM}" && $- = *i* && $- != *c* ]]; then
+  if [[ -o login ]]; then
+    # is -s zsh --login ; exit
+    is -s zsh ; exit
+  else
+    is -s zsh ; exit
+  fi
+fi
