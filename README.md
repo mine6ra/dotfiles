@@ -35,3 +35,12 @@ cd zprezto
 git pull
 git submodule update --recursive
 ```
+
+### グローバルにインストールしたnpmパッケージのアップデート
+
+```shell
+# 古くなったパッケージ一覧
+npm outdated -g
+# アップデート
+npm update -g
+```

@@ -22,14 +22,8 @@
 eval "$(nodenv init -)"
 
 # ---------------- inshellisense shell plugin ----------------
-if [[ -z "${ISTERM}" && $- = *i* && $- != *c* ]]; then
-  if [[ -o login ]]; then
-    # is -s zsh --login ; exit
-    is -s zsh ; exit
-  else
-    is -s zsh ; exit
-  fi
-fi
+[[ -f ~/.inshellisense/zsh/init.zsh ]] && source ~/.inshellisense/zsh/init.zsh
 
 # Starship(最後)
 eval "$(starship init zsh)"
+
